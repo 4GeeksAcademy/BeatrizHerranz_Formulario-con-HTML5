@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/c8c671f7eb.js" crossorigin="anonymous"></script>
+    <title>Formulario con HTML5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            background-color: white;
+        }
+
+        .container {
+            padding: 20px;
+            padding: 40px;
+            width: 95%;
+            height: 70%;
+            box-sizing: border-box;
+            box-shadow: 0 0 0 1px grey;
+            background-color: white;
+        }
+
+        .horizontal-form {
+            background-color: grey;
+            margin-top: 20px;
+            max-width: 270px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .notes-text {
+            font-size: 12px;
+            color: grey;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Fila 1 -->
+        <div class="row">
+            <div class="col-12">
+                <h1>Payment for example</h1>
+            </div>
+        </div>
+
+        <!-- Fila 2 -->
+        <div class="row">
+            <div class="col-12">
+                <div class="alert alert-danger" role="alert">
+                    Some fields are missing
+                </div>
+            </div>
+        </div>
+
+        <!-- Fila 3 -->
+        <div class="row">
+            <div class="col-6 d-flex flex-column">
+                <p>Card #</p>
+                <input type="text" placeholder="xxxxxxxxxxxxxxxxxxxx">
+            </div>
+            <div class="col-3 d-flex flex-column">
+                <p>CVC #</p>
+                <input type="text" placeholder="0000">
+            </div>
+            <div class="col-3 d-flex flex-column">
+                <p>Amount</p>
+                <input type="text" placeholder="">
+            </div>
+        </div>
+
+        <!-- Fila 4 -->
+        <div class="row">
+            <div class="col-6 d-flex flex-column">
+                <p>First Name</p>
+                <input type="text" placeholder="">
+            </div>
+            <div class="col-6 d-flex flex-column">
+                <p>Last Name</p>
+                <input type="text" placeholder="">
+            </div>
+        </div>
+
+        <!-- Fila 5 -->
+        <div class="row">
+            <div class="col-6 d-flex flex-column">
+                <p>City</p>
+                <input type="text" placeholder="">
+            </div>
+            <div class="col-4 d-flex flex-column">
+                <p>State</p>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Pick a state</option>
+                    <option value="1">Spain</option>
+                    <option value="2">Europe</option>
+                    <option value="3">United States</option>
+                </select>
+            </div>
+            <div class="col-2 d-flex flex-column">
+                <p>Postal Code</p>
+                <input type="text" placeholder="">
+            </div>
+        </div>
+
+        <!-- Fila 6 -->
+        <div class="row">
+            <div class="col-3">
+                <p>We accept:</p>
+                <div class="horizontal-form">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <i class="fa-brands fa-cc-mastercard text-white"></i>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <i class="fa-brands fa-cc-visa text-white"></i>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <i class="fa-brands fa-cc-amex text-white"></i>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <i class="fa-brands fa-cc-paypal text-white"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3"></div>
+            <div class="col-6">
+                <div class="form-floating">
+                    <p>Message</p>
+                    <textarea class="form-control" placeholder="" id="floatingTextarea"></textarea>
+                </div>
+                <p class="notes-text">Add any notes here.</p>
+            </div>
+        </div>
+
+        <!-- Fila 7 -->
+        <div class="row">
+            <div class="col-12 d-flex justify-content-end">
+                <button type="button" class="btn btn-secondary">Cancel</button>
+                <button type="button" class="btn btn-primary">Send</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
